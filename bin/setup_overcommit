@@ -1,0 +1,12 @@
+#!/usr/bin/env ruby
+require 'pathname'
+
+# path to your application root.
+APP_ROOT = Pathname.new File.expand_path('../../', __FILE__)
+
+Dir.chdir APP_ROOT do
+  puts '== Installing overcommit =='
+  system 'bundle install --gemfile=.overcommit_gems.rb'
+  system 'BUNDLE_GEMFILE=.overcommit_gems.rb bundle exec overcommit --install'
+  system 'BUNDLE_GEMFILE=.overcommit_gems.rb bundle exec overcommit --sign'
+end

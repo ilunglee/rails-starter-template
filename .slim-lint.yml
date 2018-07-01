@@ -1,0 +1,12 @@
+linters:
+  EmptyControlStatement:
+    exclude:
+      - 'app/views/directory_of_files_to_exclude/**/*.slim'
+      - 'specific/file/to/exclude.slim'
+
+  LineLength:
+    include: 'specific/directory/to/include/**/*.slim'
+    max: 100
+
+  RedundantDiv:
+    enabled: true

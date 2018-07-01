@@ -1,0 +1,74 @@
+AllCops:
+  TargetRubyVersion: 2.5
+  Include:
+    - '**/*.rb'
+    - '**/*.rake'
+    - '**/Rakefile'
+    - '**/config.ru'
+  Exclude:
+    - 'db/schema.rb'
+    - 'lib/tasks/**/*'
+    - 'script/**/*'
+    - 'node_modules/**/*'
+    - 'db/migrate/**/*'
+    - 'spec/**/*'
+
+Rails:
+  Enabled: true
+
+Documentation:
+  Exclude:
+    - 'app/controllers/**/*.rb'
+    - 'app/models/**/*.rb'
+    - 'app/helpers/**/*.rb'
+    - 'db/migrate/*.rb'
+    - 'config/**/*.rb'
+    - 'lib/tasks/**/*.rake'
+    - 'spec/support/**/*.rb'
+Metrics/AbcSize:
+  Exclude:
+    - 'db/migrate/*.rb'
+Metrics/LineLength:
+  Max: 100
+  Exclude:
+    - 'db/migrate/*.rb'
+    - 'db/seeds/*.rb'
+    - 'config/**/*.rb'
+    - 'Gemfile'
+Metrics/MethodLength:
+  Exclude:
+    - 'db/migrate/*.rb'
+Metrics/BlockLength:
+  Exclude:
+    - 'spec/**/*.rb'
+    - 'config/**/*.rb'
+    - 'app/admin/**/*.rb'
+
+Layout/EmptyLinesAroundClassBody:
+  EnforcedStyle: empty_lines
+Layout/EmptyLinesAroundModuleBody:
+  EnforcedStyle: empty_lines
+Layout/FirstArrayElementLineBreak:
+  Enabled: true
+Layout/FirstHashElementLineBreak:
+  Enabled: true
+Layout/MultilineAssignmentLayout:
+  Enabled: true
+Layout/DotPosition:
+  EnforcedStyle: trailing
+
+Style/OptionHash:
+  Enabled: true
+Style/FrozenStringLiteralComment:
+  Enabled: false
+  # waiting on https://github.com/rrosenblum/rubocop/commit/0c7f91b0abeb2dad305edfa301366b504bb7b734
+Style/ClassAndModuleChildren:
+  Enabled: false
+
+Naming/FileName:
+  Exclude:
+    - 'Gemfile'
+    - '.overcommit_gems.rb'
+
+Bundler/OrderedGems:
+  Enabled: false
