@@ -28,8 +28,6 @@ gem 'coffee-rails', '~> 4.2'
 # Use Simple Form for extended form builder
 gem 'simple_form'
 gem 'select2-rails'
-# See https://github.com/rails/execjs#readme for more supported runtimes
-gem 'therubyracer', platforms: :ruby
 # Use Repsonders for responses to different formats
 gem 'responders'
 # Use WillPaginate for pagination

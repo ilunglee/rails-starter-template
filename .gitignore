@@ -7,11 +7,13 @@
 # Ignore Mac .DS_Store
 .DS_Store
 
-# Ignore bundler config.
+# Ignore local configs.
 /.bundle
+/.vscode
 
 # Ignore Local Variables
 .env
+.keep
 
 # Ignore all logfiles and tempfiles.
 /log/*
@@ -24,11 +26,11 @@
 # Ignore rbenv files
 .ruby-version
 
-# Ignore development environment variables
-# /config/initializers/environment_vars.rb
-
-#ignore local uploads
+# Ignore local uploads
 public/uploads/*
 
-#ignore simplecov reports
+# Ignore simplecov reports
 /coverage
+
+# Ignore ERD
+erd.pdf
