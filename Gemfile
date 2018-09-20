@@ -39,7 +39,7 @@ gem 'devise'
 # Use Stripe for payment
 gem 'stripe'
 # Use CB ActiveAdmin for default backend
-gem 'cb_stem', git: 'https://github.com/cleverbanana/cl0000-cb20-stem.git', branch: 'master'
+gem 'wrap_activeadmin', git: 'https://github.com/CMDBrew/wrap-activeadmin.git', tag: '1.2.0'
 # Use CanCan
 gem 'cancancan', '~> 2.0'
 # Use fontawesome for default icons
@@ -88,11 +88,14 @@ gem 'acts_as_list'
 gem 'responsive_images'
 
 # Mailchimp Mailer
-gem 'gibbon'
-gem 'mandrill-api'
+# gem 'gibbon'
+# gem 'mandrill-api'
+
+# SendGrid Mailer
+# gem 'smtpapi'
 
 # Image Placeholder
-gem 'holder_rails'
+# gem 'holder_rails'
 # Use Faker to create fake data
 gem 'faker'
 

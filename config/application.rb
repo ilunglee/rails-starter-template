@@ -28,7 +28,7 @@ module RailsTemplate
     config.autoload_paths   << Rails.root.join('app', 'validators', '*')
     config.eager_load_paths << Rails.root.join('lib')
     config.i18n.default_locale = :en
-    config.exceptions_app      = routes
+    # config.exceptions_app      = routes
 
   end
 

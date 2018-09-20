@@ -12,7 +12,7 @@
 * Create an .env file for all development environment variables.
 * `$ rails db:create`
 * `$ rails g active_admin:install`
-* `$ rails g cb_stem:install`
+* `$ rails g wrap_activeadmin:install`
 * `$ rails db:migrate`
 * `$ rails db:seed`
 * `$ git add -A`
@@ -26,4 +26,4 @@
 
 ### Backend Admin Panel
 * [ActiveAdmin](https://activeadmin.info/) - ActiveAdmin Documentation
-* [CbStem](https://github.com/cleverbanana/cl0000-cb20-stem) - Clever Banana Studios: CBStem
+* [CbStem](https://github.com/CMDBrew/wrap-activeadmin) - CMDBrew Studio: WrapActiveAdmin
